@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@use-morph/page-build": "^0.4.13-beta.3"
+  },
+  "scripts": {
+    "page:start": "npm run dev --prefix ./.morph/page",
+    "page:build": "npm run build --outDir _public --prefix ./.morph/page",
+    "page:update": "npm install @use-morph/page@latest --prefix ./.morph/page"
+  },
+  "workspaces": [
+    ".morph/page"
+  ]
+}

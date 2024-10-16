@@ -1,0 +1,7 @@
+{
+  "extends": "./.morph/page/tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}

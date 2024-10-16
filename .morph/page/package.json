@@ -1,0 +1,27 @@
+{
+  "name": "@use-morph/page-template",
+  "version": "0.4.13-beta.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@use-morph/mdx-plugin": "0.4.7",
+    "@use-morph/page": "0.4.13-beta.2",
+    "@use-morph/remark-gfm-plugin": "0.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@emotion/is-prop-valid": "^1.3.1",
+    "@types/node": "^20.9.3",
+    "@types/react": "^18.0.38",
+    "@types/react-dom": "^18.2.16",
+    "@vitejs/plugin-react": "^4.2.0",
+    "react-error-boundary": "^4.1.0",
+    "react-router-dom": "^6.26.2",
+    "vite": "^5.0.2"
+  }
+}

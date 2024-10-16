@@ -1,0 +1,61 @@
+export const name = 'components-variable-inputs';
+export const title = 'Components / Variable Inputs';
+
+# Variable Input Components
+
+### `<VariableInput />`
+
+export const userName = variable();
+
+<Grid cols="1" gap="3">
+  <div>
+    <label>Name</label>
+    <VariableInput variable={userName} />
+  </div>
+  <div className="text-lg p-4 bg-gray-100 rounded border-gray-400">
+    Name is <VariableValue variable={userName} />
+  </div>
+</Grid>
+
+### `<VariableDatePicker />`
+
+export const dateStart = variable();
+export const dateEnd = variable();
+export const singleDate = variable();
+
+<Grid cols="1" gap="3">
+  <div className="flex items-center gap-3 mt-3">
+    <label>Date Range</label>
+    <VariableDatePicker type="range" variables={[dateStart, dateEnd]} />
+  </div>
+  <div className="text-lg p-4 bg-gray-100 rounded border-gray-400">
+    dateStart is <VariableValue variable={dateStart} />, dateEnd is{' '}
+    <VariableValue variable={dateEnd} />
+  </div>
+</Grid>
+
+### `<VariableSelect />`
+
+export const selectValue = variable();
+
+<Grid cols="1" gap="3">
+  <div className="flex items-center gap-3 mt-3">
+    <label>Country</label>
+    <VariableSelect variable={selectValue}>
+      <VariableSelectGroup>
+        <VariableSelectLabel>NA</VariableSelectLabel>
+        <VariableSelectItem value="ca">Canada</VariableSelectItem>
+        <VariableSelectItem value="us">United States</VariableSelectItem>
+      </VariableSelectGroup>
+      <VariableSelectGroup>
+        <VariableSelectLabel>APAC</VariableSelectLabel>
+        <VariableSelectItem value="cn">China</VariableSelectItem>
+        <VariableSelectItem value="kr">Korea</VariableSelectItem>
+        <VariableSelectItem value="jp">Japan</VariableSelectItem>
+      </VariableSelectGroup>
+    </VariableSelect>
+  </div>
+  <div className="text-lg p-4 bg-gray-100 rounded border-gray-400">
+    selectValue is <VariableValue variable={selectValue} />
+  </div>
+</Grid>
