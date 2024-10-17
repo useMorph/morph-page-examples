@@ -11,6 +11,6 @@
     ".morph/page"
   ],
   "stackblitz": {
-    "startCommand": "npm start"
+    "startCommand": "yarn page:start"
   }
 }
